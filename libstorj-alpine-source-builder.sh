@@ -22,3 +22,9 @@ deps_install() {
     make \
     nettle-dev
 }
+
+source_dir_create() {
+  if [ ! -d "$SOURCE_DIR" ]; then
+    mkdir "$SOURCE_DIR"
+  fi
+}
