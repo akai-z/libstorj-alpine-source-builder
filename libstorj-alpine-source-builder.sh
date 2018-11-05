@@ -36,7 +36,7 @@ source_dir_create() {
 }
 
 m4_dir_create() {
-  if [ ! -d "$SOURCE_DIR" ]; then
-    mkdir -p "$SOURCE_DIR"
+  if [ ! -d "$M4_DIR" ]; then
+    mkdir -p "$M4_DIR"
   fi
 }
