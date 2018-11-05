@@ -40,3 +40,11 @@ m4_dir_create() {
     mkdir -p "$M4_DIR"
   fi
 }
+
+dir_create() {
+  local path="$1"
+
+  if [ ! -d "$path" ]; then
+    mkdir -p "$path"
+  fi
+}
