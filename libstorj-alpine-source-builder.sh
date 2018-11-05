@@ -23,6 +23,11 @@ deps_install() {
     nettle-dev
 }
 
+source_dir_set() {
+  source_dir_create
+  cd "$SOURCE_DIR"
+}
+
 source_dir_create() {
   if [ ! -d "$SOURCE_DIR" ]; then
     mkdir "$SOURCE_DIR"
