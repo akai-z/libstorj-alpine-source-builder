@@ -24,6 +24,14 @@ deps_install() {
     nettle-dev
 }
 
+download() {
+  curl "$SOURCE_URL" \
+    | grep "tarball_url" \
+    | cut -d '"' -f 4 \
+    | xargs curl -L \
+    | tar -zx --strip 1
+}
+
 build() {
   ./autogen.sh
   ./configure
