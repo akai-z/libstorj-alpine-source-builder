@@ -31,6 +31,10 @@ build() {
   make install
 }
 
+test() {
+  ./test/tests
+}
+
 source_dir_set() {
   dir_create "$SOURCE_DIR"
   cd "$SOURCE_DIR"
