@@ -25,7 +25,7 @@ deps_install() {
 }
 
 source_dir_set() {
-  source_dir_create
+  dir_create "$SOURCE_DIR"
   cd "$SOURCE_DIR"
 }
 
