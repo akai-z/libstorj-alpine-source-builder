@@ -29,12 +29,6 @@ source_dir_set() {
   cd "$SOURCE_DIR"
 }
 
-source_dir_create() {
-  if [ ! -d "$SOURCE_DIR" ]; then
-    mkdir "$SOURCE_DIR"
-  fi
-}
-
 m4_dir_create() {
   if [ ! -d "$M4_DIR" ]; then
     mkdir -p "$M4_DIR"
