@@ -8,6 +8,11 @@ readonly M4_DIR="build-aux/m4"
 
 REPOSITORY="storj/libstorj"
 
+clean() {
+  rm -rf "$SOURCE_DIR"
+  apk del .build-deps
+}
+
 deps_install() {
   apk update
   apk add -u --no-cache --virtual .build-deps \
