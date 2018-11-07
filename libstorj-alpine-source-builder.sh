@@ -62,3 +62,8 @@ dir_create() {
     mkdir -p "$path"
   fi
 }
+
+error() {
+  echo -e >&2 "\n$1\n"
+  exit 1
+}
