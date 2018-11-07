@@ -55,10 +55,6 @@ source_dir_set() {
   cd "$SOURCE_DIR"
 }
 
-m4_dir_create() {
-  dir_create "$M4_DIR"
-}
-
 dir_create() {
   local path="$1"
 
