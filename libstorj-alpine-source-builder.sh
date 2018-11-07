@@ -46,7 +46,7 @@ build() {
   make install
 }
 
-test() {
+installation_test() {
   ./test/tests
 }
 
