@@ -8,6 +8,14 @@ readonly M4_DIR="build-aux/m4"
 
 REPOSITORY="storj/libstorj"
 
+install() {
+  deps_install
+  download
+  source_dir_set
+  build
+  installation_test
+}
+
 clean() {
   cd ..
   rm -rf "$SOURCE_DIR"
