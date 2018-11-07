@@ -39,6 +39,7 @@ download() {
 }
 
 build() {
+  dir_create "$M4_DIR"
   ./autogen.sh
   ./configure
   make
