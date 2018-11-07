@@ -9,6 +9,7 @@ readonly M4_DIR="build-aux/m4"
 REPOSITORY="storj/libstorj"
 
 clean() {
+  cd ..
   rm -rf "$SOURCE_DIR"
   apk del .build-deps
 }
