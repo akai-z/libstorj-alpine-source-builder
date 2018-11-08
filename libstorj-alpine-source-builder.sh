@@ -7,6 +7,7 @@ readonly SOURCE_DIR="libstorj-source"
 readonly M4_DIR="build-aux/m4"
 
 REPOSITORY="storj/libstorj"
+VERSION=""
 
 install() {
   deps_install
