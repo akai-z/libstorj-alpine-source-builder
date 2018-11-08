@@ -40,7 +40,7 @@ deps_install() {
 }
 
 download() {
-  curl "$SOURCE_URL" \
+  curl "$(source_url)" \
     | grep "tarball_url" \
     | cut -d '"' -f 4 \
     | xargs curl -L \
