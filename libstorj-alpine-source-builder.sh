@@ -47,6 +47,10 @@ download() {
     | tar -zx --strip 1
 }
 
+source_url() {
+  echo "$(printf "$SOURCE_URL" "$REPOSITORY" "$VERSION")"
+}
+
 build() {
   dir_create "$M4_DIR"
   ./autogen.sh
