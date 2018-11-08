@@ -10,11 +10,15 @@ REPOSITORY="storj/libstorj"
 VERSION=""
 
 install() {
+  echo -e "\nInstalling..."
+
   deps_install
   download
   source_dir_set
   build
   installation_test
+
+  echo -e "\nLibstorj has been successfully installed.\n"
 }
 
 clean() {
