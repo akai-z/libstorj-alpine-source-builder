@@ -42,18 +42,7 @@ clean() {
 
 deps_install() {
   apk update
-  apk add -u --no-cache --virtual .build-deps \
-    autoconf \
-    automake \
-    curl \
-    curl-dev \
-    g++ \
-    json-c-dev \
-    libmicrohttpd-dev \
-    libtool \
-    libuv-dev \
-    make \
-    nettle-dev
+  apk add -u --no-cache --virtual .build-deps $REQUIRED_DEPS
 }
 
 download() {
