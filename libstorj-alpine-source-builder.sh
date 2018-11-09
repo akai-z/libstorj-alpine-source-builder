@@ -82,6 +82,16 @@ dir_create() {
   fi
 }
 
+deps_check() {
+  local dep
+
+  for dep in $REQUIRED_DEPS
+  do
+    apk info -eq "$dep" \
+      || error "$(printf "Package \"%s\" was not found." "$dep")"
+  done
+}
+
 error() {
   echo -e >&2 "\n$1\n"
   exit 1
