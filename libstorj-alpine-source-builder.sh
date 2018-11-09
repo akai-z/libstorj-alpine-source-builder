@@ -5,6 +5,19 @@ set -Eeuo pipefail
 readonly SOURCE_URL="https://api.github.com/repos/%s/releases/%s"
 readonly SOURCE_DIR="libstorj-source"
 readonly M4_DIR="build-aux/m4"
+readonly REQUIRED_DEPS="
+  autoconf
+  automake
+  curl
+  curl-dev
+  g++
+  json-c-dev
+  libmicrohttpd-dev
+  libtool
+  libuv-dev
+  make
+  nettle-dev
+"
 
 REPOSITORY="storj/libstorj"
 VERSION=""
