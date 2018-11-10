@@ -81,6 +81,14 @@ dir_create() {
   fi
 }
 
+source_dir_remove() {
+  local path="$(pwd)/${SOURCE_DIR}"
+
+  if [ -d "$path" ]; then
+    rm -rf "$path"
+  fi
+}
+
 deps_check() {
   local dep
 
