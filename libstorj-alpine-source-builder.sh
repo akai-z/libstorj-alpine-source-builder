@@ -41,8 +41,10 @@ clean() {
 }
 
 deps_install() {
-  apk update
-  apk add -u --no-cache --virtual .build-deps $REQUIRED_DEPS
+  if [ "$DEPS_INSTALL" -eq 1 ]; then
+    apk update
+    apk add -u --no-cache --virtual .build-deps $REQUIRED_DEPS
+  fi
 }
 
 download() {
