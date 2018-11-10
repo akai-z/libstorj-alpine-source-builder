@@ -35,7 +35,7 @@ install() {
 }
 
 clean() {
-  rm -rf "$SOURCE_DIR"
+  source_dir_remove
   apk del .build-deps
 }
 
