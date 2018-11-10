@@ -20,7 +20,7 @@ readonly REQUIRED_DEPS="
 "
 
 REPOSITORY="storj/libstorj"
-VERSION=""
+VERSION="tags/v1.0.3"
 
 install() {
   echo -e "\nInstalling..."
