@@ -102,6 +102,18 @@ deps_check() {
   done
 }
 
+read_args() {
+  local i
+
+  for i in "$@"
+  do
+    case $i in
+      clean)           clean;;
+      -deps_install)   DEPS_INSTALL=1;;
+    esac
+  done
+}
+
 error() {
   echo -e >&2 "\n$1\n"
   exit 1
