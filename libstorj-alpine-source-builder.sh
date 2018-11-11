@@ -38,6 +38,7 @@ install() {
 clean() {
   source_dir_remove
   apk del .build-deps
+  exit 0
 }
 
 deps_install() {
