@@ -127,8 +127,7 @@ usage: libstorj-alpine-source-builder.sh [OPTIONS]
   -deps_install
       Enables dependencies installation before building the library.
 
-  If clean option is not specified,
-  the tool will run the library install function.
+  If clean option is not used, the tool will run the library install function.
 
 Usage
 
