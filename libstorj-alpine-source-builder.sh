@@ -115,6 +115,24 @@ read_args() {
   done
 }
 
+usage() {
+  cat <<'Usage'
+
+usage: libstorj-alpine-source-builder.sh [OPTIONS]
+
+  clean
+      Runs installation clean function.
+
+  -deps_install
+      Enables dependencies installation before building the library.
+
+  If no options are specified, the tool will run the library install function.
+
+Usage
+
+  exit 0
+}
+
 error() {
   echo -e >&2 "\n$1\n"
   exit 1
