@@ -144,3 +144,5 @@ main() {
   read_args "$@"
   install
 }
+
+main "$@"
