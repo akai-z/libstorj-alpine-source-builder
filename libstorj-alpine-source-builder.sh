@@ -122,12 +122,13 @@ usage() {
 usage: libstorj-alpine-source-builder.sh [OPTIONS]
 
   clean
-      Runs installation clean function.
+      Runs installation clean function only.
 
   -deps_install
       Enables dependencies installation before building the library.
 
-  If no options are specified, the tool will run the library install function.
+  If clean option is not specified,
+  the tool will run the library install function.
 
 Usage
 
