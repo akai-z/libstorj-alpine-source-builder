@@ -111,6 +111,7 @@ read_args() {
     case $i in
       clean)           clean;;
       -deps_install)   DEPS_INSTALL=1;;
+      --help)          usage;;
     esac
   done
 }
