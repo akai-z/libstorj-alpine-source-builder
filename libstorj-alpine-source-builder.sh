@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -Eeuo pipefail
+set -euo pipefail
 
 readonly SOURCE_URL="https://api.github.com/repos/%s/releases/%s"
 readonly SOURCE_DIR="libstorj-source"
