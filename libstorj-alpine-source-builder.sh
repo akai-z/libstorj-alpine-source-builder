@@ -27,8 +27,8 @@ install() {
   echo -e "\nInstalling..."
 
   deps_install
-  download
   source_dir_set
+  download
   build
   installation_test
 
