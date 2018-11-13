@@ -45,6 +45,8 @@ deps_install() {
   if [ "$DEPS_INSTALL" -eq 1 ]; then
     apk update
     apk add -u --no-cache --virtual .build-deps $REQUIRED_DEPS
+  else
+    deps_check
   fi
 }
 
