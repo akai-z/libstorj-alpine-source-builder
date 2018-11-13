@@ -71,7 +71,7 @@ build() {
 }
 
 installation_test() {
-  ./test/tests
+  TMPDIR="/tmp/" ./test/tests
 }
 
 source_dir_set() {
