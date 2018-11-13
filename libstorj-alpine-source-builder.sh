@@ -140,7 +140,6 @@ error() {
 }
 
 main() {
-  deps_check
   read_args "$@"
   install
 }
