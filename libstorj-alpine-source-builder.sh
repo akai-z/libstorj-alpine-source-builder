@@ -134,6 +134,9 @@ usage: libstorj-alpine-source-builder.sh [OPTIONS]
   --repository
       Github repository name. (Optional)
 
+  --version
+      Library version. (Optional)
+
   If clean option is not used, the tool will run the library install function.
 
 Usage
