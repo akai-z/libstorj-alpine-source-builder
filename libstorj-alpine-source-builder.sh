@@ -38,7 +38,7 @@ install() {
 
 clean() {
   source_dir_remove
-  apk del .build-deps
+  apk del "$DEPS_PACKAGE"
   exit 0
 }
 
