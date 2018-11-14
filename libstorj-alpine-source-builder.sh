@@ -4,6 +4,7 @@ set -euo pipefail
 
 readonly SOURCE_URL="https://api.github.com/repos/%s/releases/%s"
 readonly SOURCE_DIR="libstorj-source"
+readonly DEPS_PACKAGE=".libstorj-build-deps"
 readonly M4_DIR="build-aux/m4"
 readonly REQUIRED_DEPS="
   autoconf
