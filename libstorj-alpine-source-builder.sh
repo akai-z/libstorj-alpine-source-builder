@@ -114,6 +114,7 @@ read_args() {
       clean)            clean;;
       -deps_install)    DEPS_INSTALL=1;;
       --repository=*)   REPOSITORY="${i#*=}";;
+      --version=*)      VERSION="${i#*=}";;
       --help)           usage;;
     esac
   done
