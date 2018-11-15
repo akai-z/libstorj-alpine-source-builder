@@ -125,6 +125,7 @@ read_args() {
   do
     case $i in
       clean)                 clean;;
+      run_deps_install)      run_deps_install;;
       -build_deps_install)   BUILD_DEPS_INSTALL=1;;
       --repository=*)        REPOSITORY="${i#*=}";;
       --version=*)           VERSION="${i#*=}";;
