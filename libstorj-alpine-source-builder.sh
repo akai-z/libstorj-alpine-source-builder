@@ -22,7 +22,7 @@ readonly BUILD_DEPS="
 
 REPOSITORY="storj/libstorj"
 VERSION="tags/v1.0.3"
-DEPS_INSTALL=0
+BUILD_DEPS_INSTALL=0
 
 install() {
   echo -e "\nInstalling..."
@@ -43,7 +43,7 @@ clean() {
 }
 
 deps_install() {
-  if [ "$DEPS_INSTALL" -eq 1 ]; then
+  if [ "$BUILD_DEPS_INSTALL" -eq 1 ]; then
     apk update
     apk add -u --no-cache --virtual "$BUILD_DEPS_PKG" $BUILD_DEPS
   else
@@ -113,7 +113,7 @@ read_args() {
   do
     case $i in
       clean)            clean;;
-      -deps_install)    DEPS_INSTALL=1;;
+      -deps_install)    BUILD_DEPS_INSTALL=1;;
       --repository=*)   REPOSITORY="${i#*=}";;
       --version=*)      VERSION="${i#*=}";;
       --help)           usage;;
