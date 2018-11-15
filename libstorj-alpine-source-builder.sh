@@ -19,6 +19,12 @@ readonly BUILD_DEPS="
   make
   nettle-dev
 "
+readonly RUN_DEPS="
+  json-c
+  libcurl
+  libuv
+  nettle
+"
 
 REPOSITORY="storj/libstorj"
 VERSION="tags/v1.0.3"
