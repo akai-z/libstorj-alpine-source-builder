@@ -143,6 +143,10 @@ usage: libstorj-alpine-source-builder.sh [OPTIONS]
       Removes source files and build dependencies.
       (If used, the library source build function will be ignored.)
 
+  run_deps_install
+      Installs library "run" dependencies.
+      (If used, the library source build function will be ignored.)
+
   -build_deps_install
       Enables dependencies installation before building the library.
 
