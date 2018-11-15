@@ -48,6 +48,12 @@ clean() {
   exit 0
 }
 
+run_deps_install() {
+  apk update
+  apk add -u --no-cache $RUN_DEPS
+  exit 0
+}
+
 build_deps_install() {
   if [ "$BUILD_DEPS_INSTALL" -eq 1 ]; then
     apk update
