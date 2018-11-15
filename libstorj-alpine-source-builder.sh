@@ -47,7 +47,7 @@ build_deps_install() {
     apk update
     apk add -u --no-cache --virtual "$BUILD_DEPS_PKG" $BUILD_DEPS
   else
-    deps_check
+    build_deps_check
   fi
 }
 
@@ -96,7 +96,7 @@ source_dir_remove() {
   fi
 }
 
-deps_check() {
+build_deps_check() {
   local dep
 
   for dep in $BUILD_DEPS
