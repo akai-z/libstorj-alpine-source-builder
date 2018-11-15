@@ -4,7 +4,7 @@ set -euo pipefail
 
 readonly SOURCE_URL="https://api.github.com/repos/%s/releases/%s"
 readonly SOURCE_DIR="libstorj-source"
-readonly DEPS_PACKAGE=".libstorj-build-deps"
+readonly BUILD_DEPS_PKG=".libstorj-build-deps"
 readonly M4_DIR="build-aux/m4"
 readonly BUILD_DEPS="
   autoconf
@@ -38,14 +38,14 @@ install() {
 
 clean() {
   source_dir_remove
-  apk del "$DEPS_PACKAGE"
+  apk del "$BUILD_DEPS_PKG"
   exit 0
 }
 
 deps_install() {
   if [ "$DEPS_INSTALL" -eq 1 ]; then
     apk update
-    apk add -u --no-cache --virtual "$DEPS_PACKAGE" $BUILD_DEPS
+    apk add -u --no-cache --virtual "$BUILD_DEPS_PKG" $BUILD_DEPS
   else
     deps_check
   fi
