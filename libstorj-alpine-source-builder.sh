@@ -27,7 +27,7 @@ BUILD_DEPS_INSTALL=0
 install() {
   echo -e "\nInstalling..."
 
-  deps_install
+  build_deps_install
   source_dir_set
   download
   build
@@ -42,7 +42,7 @@ clean() {
   exit 0
 }
 
-deps_install() {
+build_deps_install() {
   if [ "$BUILD_DEPS_INSTALL" -eq 1 ]; then
     apk update
     apk add -u --no-cache --virtual "$BUILD_DEPS_PKG" $BUILD_DEPS
