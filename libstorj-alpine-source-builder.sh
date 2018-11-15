@@ -112,11 +112,11 @@ read_args() {
   for i in "$@"
   do
     case $i in
-      clean)            clean;;
-      -deps_install)    BUILD_DEPS_INSTALL=1;;
-      --repository=*)   REPOSITORY="${i#*=}";;
-      --version=*)      VERSION="${i#*=}";;
-      --help)           usage;;
+      clean)                 clean;;
+      -build_deps_install)   BUILD_DEPS_INSTALL=1;;
+      --repository=*)        REPOSITORY="${i#*=}";;
+      --version=*)           VERSION="${i#*=}";;
+      --help)                usage;;
     esac
   done
 }
