@@ -6,7 +6,7 @@ readonly SOURCE_URL="https://api.github.com/repos/%s/releases/%s"
 readonly SOURCE_DIR="libstorj-source"
 readonly DEPS_PACKAGE=".libstorj-build-deps"
 readonly M4_DIR="build-aux/m4"
-readonly REQUIRED_DEPS="
+readonly BUILD_DEPS="
   autoconf
   automake
   curl
@@ -45,7 +45,7 @@ clean() {
 deps_install() {
   if [ "$DEPS_INSTALL" -eq 1 ]; then
     apk update
-    apk add -u --no-cache --virtual "$DEPS_PACKAGE" $REQUIRED_DEPS
+    apk add -u --no-cache --virtual "$DEPS_PACKAGE" $BUILD_DEPS
   else
     deps_check
   fi
@@ -99,7 +99,7 @@ source_dir_remove() {
 deps_check() {
   local dep
 
-  for dep in $REQUIRED_DEPS
+  for dep in $BUILD_DEPS
   do
     apk info -eq "$dep" \
       || error "$(printf "Package \"%s\" was not found." "$dep")"
