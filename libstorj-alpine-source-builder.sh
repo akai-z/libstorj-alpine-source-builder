@@ -134,6 +134,7 @@ read_args() {
       clean)                 clean;;
       run_deps_install)      run_deps_install;;
       build_deps_list)       deps_list "$BUILD_DEPS";;
+      run_deps_list)         deps_list "$RUN_DEPS";;
       -build_deps_install)   BUILD_DEPS_INSTALL=1;;
       --repository=*)        REPOSITORY="${i#*=}";;
       --version=*)           VERSION="${i#*=}";;
