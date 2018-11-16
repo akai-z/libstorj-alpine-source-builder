@@ -54,6 +54,13 @@ run_deps_install() {
   exit 0
 }
 
+deps_list() {
+  local list="$1"
+
+  echo "$list"
+  exit 0
+}
+
 build_deps_install() {
   if [ "$BUILD_DEPS_INSTALL" -eq 1 ]; then
     apk update
