@@ -33,7 +33,9 @@ BUILD_DEPS_INSTALL=0
 install() {
   echo -e "\nInstalling..."
 
-  build_deps_install
+  [ "$BUILD_DEPS_INSTALL" -eq 1 ] && \
+    build_deps_install || build_deps_check
+
   source_dir_set
   download
   build
