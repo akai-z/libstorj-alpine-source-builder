@@ -64,12 +64,8 @@ deps_list() {
 }
 
 build_deps_install() {
-  if [ "$BUILD_DEPS_INSTALL" -eq 1 ]; then
-    apk update
-    apk add -u --no-cache --virtual "$BUILD_DEPS_PKG" $BUILD_DEPS
-  else
-    build_deps_check
-  fi
+  apk update
+  apk add -u --no-cache --virtual "$BUILD_DEPS_PKG" $BUILD_DEPS
 }
 
 download() {
