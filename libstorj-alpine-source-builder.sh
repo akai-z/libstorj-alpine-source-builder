@@ -136,7 +136,7 @@ read_args() {
       -build_deps_install)   BUILD_DEPS_INSTALL=1;;
       --repository=*)        REPOSITORY="${i#*=}";;
       --version=*)           VERSION="${i#*=}";;
-      --help)                usage;;
+      *)                     usage;;
     esac
   done
 }
