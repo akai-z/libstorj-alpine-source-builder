@@ -163,7 +163,7 @@ usage: libstorj-alpine-source-builder.sh [OPTIONS]
       Lists "run" dependencies.
 
   -build_deps_install
-      Enables dependencies installation before building the library.
+      Enables "build" dependencies installation before building the library.
 
   --repository
       Github repository name. (Optional)
