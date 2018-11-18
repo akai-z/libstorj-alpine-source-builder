@@ -114,6 +114,10 @@ source_dir_remove() {
   fi
 }
 
+lib_tmp_files_remove() {
+  rm -rf $LIB_TMP_FILES
+}
+
 build_deps_check() {
   local dep
 
