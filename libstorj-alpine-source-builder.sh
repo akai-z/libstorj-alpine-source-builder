@@ -149,7 +149,7 @@ usage() {
 usage: libstorj-alpine-source-builder.sh [OPTIONS]
 
   clean
-      Removes source files and build dependencies.
+      Removes library source and temporary files, and "build" dependencies.
       (If used, the library source build function will be ignored.)
 
   run_deps_install
