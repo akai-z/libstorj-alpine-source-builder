@@ -108,11 +108,7 @@ dir_create() {
 }
 
 source_dir_remove() {
-  local path="$(pwd)/${SOURCE_DIR}"
-
-  if [ -d "$path" ]; then
-    rm -rf "$path"
-  fi
+  rm -rf "$(pwd)/${SOURCE_DIR}"
 }
 
 lib_tmp_files_remove() {
