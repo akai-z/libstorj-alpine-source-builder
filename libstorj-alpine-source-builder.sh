@@ -47,6 +47,7 @@ install() {
 
 clean() {
   source_dir_remove
+  lib_tmp_files_remove
   apk del "$BUILD_DEPS_PKG"
   exit 0
 }
