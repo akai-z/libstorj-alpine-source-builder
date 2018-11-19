@@ -109,6 +109,12 @@ lib_tmp_files_remove() {
   rm -rf $LIB_TMP_FILES
 }
 
+build_deps_del() {
+  if package_check "$BUILD_DEPS_PKG"; then
+    apk del "$BUILD_DEPS_PKG"
+  fi
+}
+
 build_deps_check() {
   local dep
 
