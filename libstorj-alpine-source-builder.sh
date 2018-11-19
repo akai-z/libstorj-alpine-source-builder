@@ -85,7 +85,7 @@ source_url() {
 }
 
 build() {
-  dir_create "$M4_DIR"
+  mkdir -p "$M4_DIR"
   ./autogen.sh
   ./configure
   make
