@@ -101,14 +101,6 @@ source_dir_set() {
   cd "$SOURCE_DIR"
 }
 
-dir_create() {
-  local path="$1"
-
-  if [ ! -d "$path" ]; then
-    mkdir -p "$path"
-  fi
-}
-
 source_dir_remove() {
   rm -rf "$(pwd)/${SOURCE_DIR}"
 }
