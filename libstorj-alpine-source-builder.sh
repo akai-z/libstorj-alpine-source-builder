@@ -119,6 +119,11 @@ build_deps_check() {
   done
 }
 
+package_check() {
+  local package="$1"
+  apk info -eq "$package"
+}
+
 read_args() {
   local i
 
