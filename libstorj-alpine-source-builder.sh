@@ -49,12 +49,14 @@ clean() {
   source_dir_remove
   lib_tmp_files_remove
   apk del "$BUILD_DEPS_PKG"
+
   exit 0
 }
 
 run_deps_install() {
   apk update
   apk add -u --no-cache $RUN_DEPS
+
   exit 0
 }
 
