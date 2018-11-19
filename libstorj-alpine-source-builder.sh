@@ -97,7 +97,7 @@ installation_test() {
 }
 
 source_dir_set() {
-  dir_create "$SOURCE_DIR"
+  mkdir -p "$SOURCE_DIR"
   cd "$SOURCE_DIR"
 }
 
