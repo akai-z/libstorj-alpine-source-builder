@@ -114,7 +114,7 @@ build_deps_check() {
 
   for dep in $BUILD_DEPS
   do
-    apk info -eq "$dep" \
+    package_check "$dep" \
       || error "$(printf "Package \"%s\" was not found." "$dep")"
   done
 }
