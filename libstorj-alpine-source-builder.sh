@@ -111,7 +111,9 @@ lib_tmp_files_remove() {
 }
 
 build_deps_del() {
-  if package_check "$BUILD_DEPS_PKG"; then
+  if [ "$BUILD_DEPS_DELETE" -eq 1 ] \
+    && package_check "$BUILD_DEPS_PKG"
+  then
     apk del "$BUILD_DEPS_PKG"
   fi
 }
