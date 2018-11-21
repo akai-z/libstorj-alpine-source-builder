@@ -174,6 +174,11 @@ usage: libstorj-alpine-source-builder.sh [OPTIONS]
   -build_deps_install
     Enables "build" dependencies installation before building the library.
 
+  -build_deps_delete
+    Enables "build" dependencies deletion during clean process.
+    (If used, it must be added before clean option.)
+    (e.g. libstorj-alpine-source-builder.sh -build_deps_delete clean)
+
   --repository
     Github repository name. (Optional)
 
