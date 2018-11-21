@@ -30,6 +30,7 @@ readonly RUN_DEPS="
 REPOSITORY="storj/libstorj"
 VERSION="tags/v1.0.3"
 BUILD_DEPS_INSTALL=0
+BUILD_DEPS_DELETE=0
 
 install() {
   echo -e "\nInstalling..."
