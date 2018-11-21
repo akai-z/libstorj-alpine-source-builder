@@ -142,6 +142,7 @@ read_args() {
       build_deps_list)       deps_list "$BUILD_DEPS";;
       run_deps_list)         deps_list "$RUN_DEPS";;
       -build_deps_install)   BUILD_DEPS_INSTALL=1;;
+      -build_deps_delete)    BUILD_DEPS_DELETE=1;;
       --repository=*)        REPOSITORY="${i#*=}";;
       --version=*)           VERSION="${i#*=}";;
       *)                     usage;;
