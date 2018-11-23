@@ -8,6 +8,16 @@ Asynchronous multi-platform C library and CLI for encrypted file transfer on the
 
 ([Click here to know more about Libstorj](https://github.com/storj/libstorj))
 
+
+## What is Storj?
+
+Storj is a platform, token, and suite of decentralized applications that allows you to store data in a secure and decentralized manner.
+
+Check the following links to know more about Storj:  
+https://storj.io/  
+https://github.com/storj/storj
+
+
 ## Usage
 
 ```
