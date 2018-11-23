@@ -41,3 +41,7 @@ libstorj-alpine-source-builder.sh [OPTIONS]
   --version
     Library version. (Optional)
 ```
+
+## Authors
+
+* Ammar K.
