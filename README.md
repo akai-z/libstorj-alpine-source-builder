@@ -45,3 +45,7 @@ libstorj-alpine-source-builder.sh [OPTIONS]
 ## Authors
 
 * Ammar K.
+
+## License
+
+[GNU General Public License version 2](LICENSE)
