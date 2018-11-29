@@ -183,6 +183,7 @@ usage: libstorj-alpine-source-builder.sh [OPTIONS]
 
   --repository=<repository>
     Github repository name. (Optional)
+    Default: "${DEFAULT_REPOSITORY}"
 
   --version=<version>
     Library version. (Optional)
