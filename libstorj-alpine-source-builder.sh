@@ -2,6 +2,7 @@
 
 set -euo pipefail
 
+readonly DEFAULT_REPOSITORY="storj/libstorj"
 readonly SOURCE_URL="https://api.github.com/repos/%s/releases/%s"
 readonly SOURCE_DIR="libstorj-source"
 readonly BUILD_DEPS_PKG=".libstorj-build-deps"
