@@ -155,7 +155,7 @@ read_args() {
 }
 
 usage() {
-  cat <<'Usage'
+  cat <<Usage
 
 usage: libstorj-alpine-source-builder.sh [OPTIONS]
 
