@@ -187,6 +187,7 @@ usage: libstorj-alpine-source-builder.sh [OPTIONS]
 
   --version=<version>
     Library version. (Optional)
+    Default: "${DEFAULT_VERSION}"
 
 Usage
 
