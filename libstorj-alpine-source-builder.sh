@@ -179,10 +179,10 @@ usage: libstorj-alpine-source-builder.sh [OPTIONS]
     (If used, it must be added before clean option.)
     (e.g. libstorj-alpine-source-builder.sh -build_deps_delete clean)
 
-  --repository
+  --repository=<repository>
     Github repository name. (Optional)
 
-  --version
+  --version=<version>
     Library version. (Optional)
 
 Usage
